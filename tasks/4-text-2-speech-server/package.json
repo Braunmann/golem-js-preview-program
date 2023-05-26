@@ -1,7 +1,7 @@
 {
-  "name": "fastify-starter",
+  "name": "4-text-2-speech-server",
   "version": "1.0.0",
-  "description": "Fastify starter template with Typescript",
+  "description": "4-text-2-speech-server",
   "type": "module",
   "scripts": {
     "watch": "nodemon src/app.mjs",
