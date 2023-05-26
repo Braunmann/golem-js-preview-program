@@ -1,7 +1,7 @@
 import buildServer from "./server.mjs";
 
+// I like conception that server, tts and app are separated across files
 const PORT = 3000;
-
 const server = buildServer();
 
 (async function () {

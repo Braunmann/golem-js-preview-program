@@ -9,6 +9,9 @@ const EXECUTOR_CONFIG = {
 async function tts(text, filepath) {
     const executor = await TaskExecutor.create(EXECUTOR_CONFIG);
     await executor.run(async (ctx) => {
+        // here I couple of changes:
+        // 1. correct the way of creating job on ctx. to ctx.beginBatch().run().downloadFile().end()
+        // 2. check if each command succeeded, if not throw an exception
         const results = await ctx
             .beginBatch()
             .run(
